@@ -6,10 +6,16 @@ export const routes: Routes = [
   {
     path: 'child-a',
     component: ChildAComponent,
+    data: {
+      reuseComponent: true,
+    },
   },
   {
     path: 'child-b',
     component: ChildBComponent,
+    data: {
+      reuseComponent: true,
+    },
   },
   {
     path: '',
