@@ -1,0 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-child-b',
+  templateUrl: './child-b.component.html',
+  styleUrl: './child-b.component.css',
+})
+export class ChildBComponent implements OnInit {
+  constructor() {
+    console.warn('constructor: Child B');
+  }
+
+  ngOnInit() {
+    console.warn('ngOnInit: Child B');
+  }
+}
