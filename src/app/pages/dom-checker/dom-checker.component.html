@@ -1,0 +1,28 @@
+<h2>Default Change Detection Demo</h2>
+
+<div>
+  <p>Name: {{ getName() }}</p>
+  <button (click)="updateName()">Change Name</button>
+</div>
+
+<div>
+  <p>Age: {{ getAge() }}</p>
+  <button (click)="updateAge()">Increment Age</button>
+</div>
+
+<div>
+  <p>Profile: {{ getProfile() }}</p>
+</div>
+
+<div>
+  <pre>User: {{ getUser() | json }}</pre>
+  <p>User Name: {{ user.name }}</p>
+  <p>User Age: {{ user.age }}</p>
+  <button (click)="updateUserName()">Change User Name</button>
+  <button (click)="updateUserNameDelay()">Change User Name Delay</button>
+  <button (click)="updateUserAge()">Increment User Age</button>
+</div>
+
+<div>
+  <app-user [user]="user" />
+</div>
